@@ -63,7 +63,7 @@ project_youtubeclone/
 |-- README.md
 |-- package.json
 |-- ...
-
+```
 
 ## Usage
 1. Browse trending videos on the homepage.
