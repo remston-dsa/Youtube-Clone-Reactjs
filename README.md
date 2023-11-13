@@ -7,9 +7,15 @@ This project is a YouTube clone built using ReactJS, RapidAPI, and Material UI. 
 ## Features
 
 - Video browsing
+- |-- ![VideoCardImage](./images/VideoCardImage.png)
 - Channel search
+- |-- ![SearchCategoryImage](./images/SearchCategoryImage.png)
 - Responsive design
+- |-- ![SelectedCategoryImage](./images/selectedCategoryImage.png)
 - Loader for asynchronous operations
+- |-- ![ChannelIcon](./images/ChannelIcon.png)
+
+
 
 ## Technologies Used
 
