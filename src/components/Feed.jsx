@@ -53,7 +53,7 @@ const Feed = () => {
           variant='body2'
           sx={{ mt: 1.5, color: '#fff' }}
         >
-          @Copyright 2023 Youtube Clone <br /> Remston Dsa.
+          &copy; Copyright 2023 by Remston Dsa.
         </Typography>
       </Box>
       <Box
