@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchFromAPI } from '../utils/fetchFromApi';
-import { Videos, Loader } from './'; // Assuming you have Videos and Loader components
+import { Videos, Loader, Navbar } from './'; // Assuming you have Videos, Loader, and Navbar components
+import { Box, Typography } from '@mui/material';
 
 const SearchFeed = () => {
   const [videos, setVideos] = useState(null);
@@ -34,10 +35,16 @@ const SearchFeed = () => {
   }, [searchTerm]);
 
   return (
-    <div className="search-feed">
-      <h2>Search Results for "{searchTerm}"</h2>
-      {videos ? <Videos videos={videos} /> : <Loader />} {/* Assuming you have a Loader component */}
-    </div>
+    <Box sx={{ backgroundColor: "#000", paddingTop: "56px" }}> {/* Adjust paddingTop to account for the Navbar height */}
+      <Navbar />
+
+      <Box p={2}>
+        <Typography variant="p" fontWeight="bold" mb={2} sx={{ color: "white" }}>
+          <p>Search Results for {searchTerm}</p>
+        </Typography>
+        {videos ? <Videos videos={videos} /> : <Loader />} {/* Assuming you have a Loader component */}
+      </Box>
+    </Box>
   );
 };
 
