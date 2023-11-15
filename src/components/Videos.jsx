@@ -15,7 +15,7 @@ const Videos = ({ videos, direction }) => {
       gap={2}
     >
       {videos.map((item, idx) => (
-        <Box key={idx} flex="1"> {/* Added flex property to make each item fill the space */}
+        <Box key={idx} flex="1" minWidth="300px" maxWidth="400px" width="100%"> {/* Adjust the min and max width as needed */}
           {(item.id.videoId && <VideoCard video={item}/>) || (item.snippet.channelId && <ChannelCard channelDetail={item} />)}
         </Box>
       ))}
